@@ -24,9 +24,13 @@ ChipArmour can be used either in the raw source code (FOSS, Apache licence), or 
 
 The binary library also includes optimized assembly-language versions of the library, which maintain the fault resistance with considerably less overhead. Using the binary library ensures the validated object code has been used in the final linking stage.
 
+The Apache licence does allow you to build your own binary libraries of course. Note that parts of the validation environment are not part of the FOSS ChipArmour project.
+
 ## Status of Library
 
-The library itself is in early alpha. Using the API now makes it easier to switch the underlying code around as improvements happen, and you will automatically receive better protection against fault injection attack threats.
+The library itself is in **early alpha**. Using the API now makes it easier to switch the underlying code around as improvements happen, and you will automatically receive better protection against fault injection attack threats.
+
+There may yet be large changes in the API, as we discover more effective methods of shaping our FI resistance.
 
 ## Legal and Other Notes
 
