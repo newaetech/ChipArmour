@@ -108,21 +108,31 @@ void ca_hal_mpu_init(void);
  ROP prevention assistance functions.
  ***************************************************************************/
 
-#define CA_VALID_RETURNADDRS_ARRAY(functionname, max_return_locs) \
-    static void * ca_functionname_valid_returnaddrs[max_return_locs];
+#define CA_ROP_SET_MAX_RETURNS(functionname, maxreturns) \
+    static uint32_t ca_functionname_max_returns = maxreturns;
 
-#define CA_CHECK_VALID_RETURN(functionname) \
-    { 
+#define CA_ROP_RETURNADDRS_ARRAY(functionname) \
+    static void * ca_functionname_valid_returnaddrs[ca_functionname_max_returns];
+
+#define CA_ROP_CHECK_VALID_RETURN(functionname) \
+ { \ 
     /* Validate we are returning to a valid call location */ \
     void * ca_ra = __builtin_extract_return_addr(__builtin_return_address(0)); \
-    for(uint32_t ca_loopindx = 0; ca_loopindx < len(ca_functionname_valid_returnaddrs); ca_loopindx++){ \
+    uint32_t ca_loopindx; \
+    for(ca_loopindx = 0; ca_loopindx < len(ca_functionname_valid_returnaddrs); ca_loopindx++){ \
+        /* The zero flag indicates end of array reached, shouldn't happen */ \
         if (ca_functionname_valid_returnaddrs[ca_loopindx] == 0){ \
             ca_panic(); \
         } \
-        
-    
-    
-    
+        if (ca_functionname_valid_returnaddrs[ca_loopindx] == ca_ra){ \
+            break; \
+        } \
+    } \
+    if (ca_loopindx > len(ca_functionname_valid_returnaddrs)) { \
+        ca_panic(); \
+    } \
+ }
+
 /***************************************************************************
  Memory space armouring macros / function.
  ***************************************************************************/
