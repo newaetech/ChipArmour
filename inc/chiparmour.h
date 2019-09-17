@@ -53,8 +53,8 @@ typedef int32_t (*ca_fptr_gethash_t)(void * image, uint8_t * hash, uint32_t len)
      functions.
 */
 typedef struct {
-    uint32_t cau32;
-    uint32_t caiu32;
+    uint32_t value;
+    uint32_t invvalue;
 } ca_uint32_t;
 
 /**
@@ -62,8 +62,8 @@ typedef struct {
      functions.
 */
 typedef struct {
-    uint16_t cau16;
-    uint16_t caiu16;
+    uint16_t value;
+    uint16_t invvalue;
 } ca_uint16_t;
 
 /**
@@ -71,8 +71,8 @@ typedef struct {
      functions.
 */
 typedef struct {
-    uint8_t cau8;
-    uint8_t caiu8;
+    uint8_t value;
+    uint8_t invvalue;
 } ca_uint8_t;
 
 /**
@@ -158,7 +158,7 @@ void ca_unlock_secure1(uint32_t unlock_key);
     You need to set MAX_SECURE1_RETURN_LOCS to the maximum number
     of locations this could be. The return value is checked to ensure
     this is a "valid" value right now. Requires a post-processing step to
-    over-rwite these values in the ELF file.
+    over-write these values in the ELF file.
 */
 static void * secure1_valid_returnaddrs[MAX_SECURE1_RETURN_LOCS];
 

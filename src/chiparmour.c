@@ -45,24 +45,35 @@ static uint32_t _ca_panicflag = 0;
   
   
 */
-uint32_t _ca_ret_u32(uint32_t value, uint32_t magic, uint32_t maxdelay)
+ca_uint32_t _ca_ret_u32(ca_uint32_t value, ca_uint32_t magic, uint32_t maxdelay)
 {
     ca_landmine();
     ca_check_magic();
     uint32_t delay = ca_get_delay();
     uint32_t i = 0;
-    value = value - dly;
-    
+    uint32_t local_value;
+    value.value = value.value - dly;    
     ca_landmine();
-
+    value.invvalue = ~value.invvalue - dly;
+    
+    if (value.invvalue != ~value.value){
+        ca_panic();
+    }
+    
+    local_value = value.value;
+    
+    if (value.invvalue != ~value.value){
+        ca_panic();
+    }    
+    
     while(ca_true()){
         i++;
-        value++;
+        local_value++;
         if (i > delay) { ca_panic(); }
         
         ca_landmine();
         
-        if (i == delay){return value;}
+        if (i == delay){return local_value;}
         if (i == delay){return 0;}
         
         ca_landmine();
@@ -79,10 +90,12 @@ uint32_t _ca_ret_u32(uint32_t value, uint32_t magic, uint32_t maxdelay)
 
 typedef void (*ca_funcpointer)(void *);
 
-uint32_t _ca_limit_u32(uint32_t input, uint32_t min, uint32_t max, uint32_t magic)
+uint32_t _ca_limit_u32(ca_uint32_t input, ca_uint32_t min, ca_uint32_t max, uint32_t magic)
 {
     ca_landmine();
     ca_check_magic();
+    
+    //TODO - this function. Need to validate input.
     
     if (input < min){
         input = min;
@@ -119,7 +132,7 @@ uint32_t _ca_limit_u32(uint32_t input, uint32_t min, uint32_t max, uint32_t magi
   verifing a signature.
 */
 _ca_compare_u32_eq(ca_uint32_t op1,
-                  ca_uint32_t op2,
+                   ca_uint32_t op2,
                   ca_funcpointer_t equal_function,
                   void * equal_func_param,
                   ca_functpointer_t unequal_function,
@@ -129,6 +142,8 @@ _ca_compare_u32_eq(ca_uint32_t op1,
     ca_landmine();
     ca_check_magic(magic);
     
+    //Mask values we'll jump to, make later FI skips increase chance we jump
+    //to some invalid value.
     (uint32_t) equal_function ^= (CA_CMP_LOOPS << 15);
     (uint32_t) equal_func_param ^= (CA_CMP_LOOPS << 15);
     ca_landmine();
@@ -195,11 +210,14 @@ CA_DO_LOOP:
     i = 0;
     while(1)
     {
-        if (op1 == op2) {equal++;}
+        if (op1.value == op2.value) {equal++;}
         else {unequal++;}
         
         ca_fastwait();        
         i++;
+
+        if (op1.invvalue == op2.invvalue) {equal++;}
+        else {unequal++;}
         
         ca_landmine();
         if ((i != equal) && (i != unequal)){ ca_panic(); }
