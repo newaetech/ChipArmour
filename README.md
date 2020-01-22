@@ -10,8 +10,6 @@ ChipArmour™ is designed to be a "minimal pain" solution for existing projects,
 
 Besides the actual fault-injection resistant code being used, the memory protection units and other features of the microcontroller must be configured correctly. ChipArmour contains examples of this for various devices, and should be used as a template when starting your new projects.
 
-An example armoured application is shown, which takes the WolfBoot open-source bootloader and adds armour to it. The resulting validation is given in XXXX.
-
 ## Validation Environment
 
 If you inspect many projects, you'll find *assumed* side-channel power or fault injection countermeasures. These are tricks developers have inserted into the code, but typically do not validate them in real hardware. Or they *do* validate them, but only do it once and do not check they remained active. Poor fault models, and compilers later changing the resulting assembly frequently result in those tricks being much easier to bypass than you expect from looking at the source code.
