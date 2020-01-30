@@ -1,7 +1,7 @@
 /*
 This file is part of ChipArmour™, by NewAE Technology Inc.
 
-ChipArmour™ is Copyright 2019 NewAE Technology Inc.
+ChipArmour™ is Copyright 2019-2020 NewAE Technology Inc.
 
 ChipArmour™ is a trademark of NewAE Technology Inc.
 
@@ -19,23 +19,19 @@ limitations under the License.
 
 */
 
+/* See header file for function description (in one place to avoid doxygen problems). */
 #include "chiparmour.h"
 
 /***************************************************************************
  Memory space 'secure1' armouring functions.
  ***************************************************************************/
 
-/**
- You can call ca_unlock_secure1 from up to N different locations.
- */
-CA_ROP_SET_MAX_RETURNS(ca_unlock_secure1, 50);
+// Up to MAX_SECURE1_RETURN_LOCS return addresses allowed for ca_unlock_secure1
+CA_ROP_SET_MAX_RETURNS(ca_unlock_secure1, MAX_SECURE1_RETURN_LOCS);
 
-/**
- Stores the valid return addresses.
- */
+// Must run static analysis step to mark all call locations
 CA_VALID_RETURNADDRS_ARRAY(ca_unlock_secure1);
  
-
 void ca_lock_secure1(void)
 {
     ca_hal_lock();

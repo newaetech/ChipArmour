@@ -1,7 +1,7 @@
 /*
 This file is part of ChipArmour™, by NewAE Technology Inc.
 
-ChipArmour™ is Copyright 2019 NewAE Technology Inc.
+ChipArmour™ is Copyright 2019-2020 NewAE Technology Inc.
 
 ChipArmour™ is a trademark of NewAE Technology Inc.
 
@@ -41,9 +41,7 @@ static uint32_t _ca_panicflag = 0;
 
 /**
   Returns an unsigned 32-bit value, but adds armour around the return
-  function to catch fault injection attempts.
-  
-  
+  function to catch fault injection attempts. 
 */
 ca_uint32_t _ca_ret_u32(ca_uint32_t value, ca_uint32_t magic, uint32_t maxdelay)
 {
@@ -86,14 +84,11 @@ ca_uint32_t _ca_ret_u32(ca_uint32_t value, ca_uint32_t magic, uint32_t maxdelay)
     ca_panic();
 }
 
-#define ca_limit_u32(input, min, max) _ca_limit_u32(ca_retfast_u32(input), ca_retfast_u32(min), ca_retfast_u32(max), ca_get_magic())
-
 typedef void (*ca_funcpointer)(void *);
 
-uint32_t _ca_limit_u32(ca_uint32_t input, ca_uint32_t min, ca_uint32_t max, uint32_t magic)
+uint32_t _ca_limit_u32(ca_uint32_t input, ca_uint32_t min, ca_uint32_t max)
 {
     ca_landmine();
-    ca_check_magic();
     
     //TODO - this function. Need to validate input.
     
@@ -125,13 +120,13 @@ uint32_t _ca_limit_u32(ca_uint32_t input, ca_uint32_t min, ca_uint32_t max, uint
     ca_panic();
 }
 
-#define CA_CMP_LOOPS 7
+#define CA_CMP_LOOPS 7                           
 
 /*
   Compares two numbers, jumps to a function if they are the same or different. Commonly used for
   verifing a signature.
 */
-_ca_compare_u32_eq(ca_uint32_t op1,
+ca_return_t _ca_compare_u32_eq(ca_uint32_t op1,
                    ca_uint32_t op2,
                   ca_funcpointer_t equal_function,
                   void * equal_func_param,

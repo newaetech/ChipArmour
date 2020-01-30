@@ -29,6 +29,11 @@ limitations under the License.
 */
 typedef void (*ca_fptr_voidptr_t)(void * func_argument);
 
+/**
+    Pointer to a function with prototype:
+       void function_to_call(void * func_argument, uint8_t * value_array);
+*/
+typedef void (*ca_fptr_voidptr_array_t)(void * func_argument, uint8_t * value_array);
 
 /**
     Pointer to a hash (or similar) function with prototype:
@@ -78,16 +83,15 @@ typedef struct {
 /**
     Complicated return values.
 */
-enum ca_return_t
+enum ca_return_t { 
     CA_SUCCESS = 0x5ABF0938,
     CA_FAIL    = 0x2820F02A,
     CA_BADARG  = 0x328A9201,
     CA_MEMERR  = 0x480ABFE1,
 };
+typedef enum ca_return_t ca_return_t;
 //Sidenote: To work as enum, restricted to positive values only (make sure top
 //          bit is clear).
-
-typedef enum ca_return_t ca_return_t;
 
 /***************************************************************************
  User call-back functions you may define (overrides weak defaults).
@@ -115,7 +119,7 @@ void ca_hal_mpu_init(void);
     static void * ca_functionname_valid_returnaddrs[ca_functionname_max_returns];
 
 #define CA_ROP_CHECK_VALID_RETURN(functionname) \
- { \ 
+ { \
     /* Validate we are returning to a valid call location */ \
     void * ca_ra = __builtin_extract_return_addr(__builtin_return_address(0)); \
     uint32_t ca_loopindx; \
@@ -152,15 +156,11 @@ void ca_lock_secure1(void);
 */
 void ca_unlock_secure1(uint32_t unlock_key);
 
-/**
-    Possible locations ca_lock_secure1() could be returning to.
-    
-    You need to set MAX_SECURE1_RETURN_LOCS to the maximum number
-    of locations this could be. The return value is checked to ensure
-    this is a "valid" value right now. Requires a post-processing step to
-    over-write these values in the ELF file.
-*/
-static void * secure1_valid_returnaddrs[MAX_SECURE1_RETURN_LOCS];
+#ifndef MAX_SECURE1_RETURN_LOCS
+#define MAX_SECURE1_RETURN_LOCS 10
+#endif
+
+
 
 /***************************************************************************
  System functions/macros
@@ -196,14 +196,43 @@ void ca_test_mpu(void);
 void ca_test_panic(void);
 
 /***************************************************************************
+State machine validation
+****************************************************************************/
+
+#define CA_STATE_INIT -2944
+
+/**
+    Once called with CA_STATE_INIT, this function requires a simple step
+    sequence to be presented, or it calls the panic function. Helpful to
+    detect out-of-sequence calls due to attacker calling directly a function.
+*/
+void ca_state_machine(int statenum);
+
+
+/***************************************************************************
  Data processing functions/macros
  ***************************************************************************/
+
+ca_return_t _ca_compare_u32_eq(ca_uint32_t op1,
+                  ca_uint32_t op2,
+                  ca_fptr_voidptr_t equal_function,
+                  void * equal_func_param,
+                  ca_fptr_voidptr_t unequal_function,
+                  void * unequal_func_param);
+                  
+uint32_t _ca_limit_u32(ca_uint32_t input, ca_uint32_t min, ca_uint32_t max);
 
 /**
     Returns a 32-bit unsigned int, but after a random delay to assist with 
     FI armouring.
 */
 ca_uint32_t ca_ret_u32(uint32_t value);
+
+/**
+    Returns a 32-bit unsigned int, but after a random delay to assist with 
+    FI armouring.
+*/
+ca_uint32_t ca_retfast_u32(uint32_t value);
 
 /**
     Returns a 16-bit unsigned int, but after a random delay to assist with 
@@ -221,7 +250,10 @@ ca_uint8_t ca_ret_u8(uint8_t value);
     Take an input value and ensure it falls within the given limits, by 
     returning the limited value.
 */
-uint32_t ca_limit_u32(uint32_t input, uint32_t min, uint32_t max);
+inline uint32_t ca_limit_u32(uint32_t input, uint32_t min, uint32_t max)
+{
+    return _ca_limit_u32(ca_retfast_u32(input), ca_retfast_u32(min), ca_retfast_u32(max));
+}
 
 /**
     Compare two uint32_t numbers, and call a function if they are the same or
@@ -237,12 +269,20 @@ uint32_t ca_limit_u32(uint32_t input, uint32_t min, uint32_t max);
                     don't need a function called on differ.
 */
 
-ca_return_t ca_compare_u32_eq( ca_uint32_t op1, 
-                               ca_uint32_t op2,
+inline ca_return_t ca_compare_u32_eq( uint32_t op1, 
+                               uint32_t op2,
                                ca_fptr_voidptr_t equal_function,
                                void * equal_func_param,
                                ca_fptr_voidptr_t unequal_function,
-                               void * unequal_func_param);
+                               void * unequal_func_param)
+ {
+    return _ca_compare_u32_eq(ca_retfast_u32(op1),
+                       ca_retfast_u32(op2),
+                       equal_function,
+                       equal_func_param,
+                       unequal_function,
+                       unequal_func_param);
+ }
 
 /**************************************************************************
  Signature verification functions / macros
@@ -257,8 +297,7 @@ ca_return_t ca_compare_func_eq( ca_fptr_voidptr_array_t    get_value_func,
                              void *                     get_value_func_param,
                              uint8_t *                  expected_value_array,
                              uint32_t                   expected_value_len,
-                             ca_funcpointer_t           equal_function,
+                             ca_fptr_voidptr_t           equal_function,
                              void *                     equal_func_param,
-                             ca_functpointer_t          unequal_function,
+                             ca_fptr_voidptr_t          unequal_function,
                              void *                     unequal_func_param);
-
