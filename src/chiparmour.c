@@ -18,6 +18,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 */
+#include "../inc/chiparmour.h"
 
 #define ca_ret_u32(value)  _ca_ret_u32(value, cp_get_magic())
 
@@ -26,8 +27,8 @@ static const uint32_t _ca_flash_55A88519 = 0x55A88519;
 static uint32_t _ca_panicflag = 0;
 
 
-#define ca_true()  (_ca_always_FEED7431 == 0xFEED7431)
-#define ca_false() (_ca_always_FEED7431 == 0xFE000000)
+#define ca_true()  (_ca_sram_FEED7431 == 0xFEED7431)
+#define ca_false() (_ca_sram_FEED7431 == 0xFE000000)
 
 #define ca_panic() {_ca_panicflag++; _ca_panic();}
 
@@ -46,23 +47,24 @@ static uint32_t _ca_panicflag = 0;
 ca_uint32_t _ca_ret_u32(ca_uint32_t value, ca_uint32_t magic, uint32_t maxdelay)
 {
     ca_landmine();
-    ca_check_magic();
     uint32_t delay = ca_get_delay();
     uint32_t i = 0;
-    uint32_t local_value;
-    value.value = value.value - dly;    
+    uint32_t local_value;    
     ca_landmine();
-    value.invvalue = ~value.invvalue - dly;
     
     if (value.invvalue != ~value.value){
         ca_panic();
     }
     
-    local_value = value.value;
+    local_value = value.value - delay;
     
     if (value.invvalue != ~value.value){
         ca_panic();
-    }    
+    }
+    
+    ca_uint32_t invalid_rv;
+    invalid_rv.value = 0;
+    invalid_rv.invvalue = 0;
     
     while(ca_true()){
         i++;
@@ -71,17 +73,24 @@ ca_uint32_t _ca_ret_u32(ca_uint32_t value, ca_uint32_t magic, uint32_t maxdelay)
         
         ca_landmine();
         
-        if (i == delay){return local_value;}
-        if (i == delay){return 0;}
+        if (i == delay){
+            ca_uint32_t rv;
+            rv.value = local_value;
+            rv.invvale = ~local_value;
+            return rv;
+        }
+        if (i == delay){return invalid_rv;}
         
         ca_landmine();
-        if (i == delay){return 0;}
+        if (i == delay){return invalid_rv;}
         
         if (i > delay) { ca_panic(); }
     }
     
     ca_landmine();
     ca_panic();
+    
+    return invalid_rv;
 }
 
 typedef void (*ca_funcpointer)(void *);
@@ -90,7 +99,7 @@ uint32_t _ca_limit_u32(ca_uint32_t input, ca_uint32_t min, ca_uint32_t max)
 {
     ca_landmine();
     
-    //TODO - this function. Need to validate input.
+    //Quick version - just have multiple checks
     
     if (input < min){
         input = min;
@@ -120,7 +129,7 @@ uint32_t _ca_limit_u32(ca_uint32_t input, ca_uint32_t min, ca_uint32_t max)
     ca_panic();
 }
 
-#define CA_CMP_LOOPS 7                           
+#define CA_CMP_LOOPS 3
 
 /*
   Compares two numbers, jumps to a function if they are the same or different. Commonly used for
@@ -131,11 +140,9 @@ ca_return_t _ca_compare_u32_eq(ca_uint32_t op1,
                   ca_funcpointer_t equal_function,
                   void * equal_func_param,
                   ca_functpointer_t unequal_function,
-                  void * unequal_func_param,
-                  ca_uint32_t magic)
+                  void * unequal_func_param)
 {
     ca_landmine();
-    ca_check_magic(magic);
     
     //Mask values we'll jump to, make later FI skips increase chance we jump
     //to some invalid value.
@@ -239,3 +246,27 @@ CA_DO_LOOP:
     ca_panic();
     ca_panic();
 }
+
+
+void ca_state_machine(int statenum)
+{
+    static int ca_stored_state;
+    
+    if (statenum == CA_STATE_INIT) {
+        ca_stored_state = 0;
+        return;
+    }
+    
+    if (++ca_stored_state != statenum){
+        ca_panic();
+    }
+    
+    if (ca_stored_state != statenum){
+        ca_panic();
+    }
+    
+    return;
+}
+
+
+

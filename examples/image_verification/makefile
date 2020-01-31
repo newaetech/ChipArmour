@@ -34,7 +34,7 @@ TARGET = image-demo
 
 # List C source files here.
 # Header files (.h) are automatically pulled in.
-SRC += image.c
+SRC += image.c ../../src/chiparmour.c
 
 # -----------------------------------------------------------------------------
 EXTRA_OPTS = NO_EXTRA_OPTS
