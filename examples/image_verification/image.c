@@ -4,8 +4,11 @@
  */
 
 #include <stdint.h>
+#include <stddef.h>
 #include "hal.h"
 #include "../../inc/chiparmour.h"
+
+int snprintf(char *, size_t, char *, ...);
 
 /* Avoid stdio.h as not sure what platform provides */
 int puts(const char * s)
@@ -31,7 +34,7 @@ image_t image = {
     "CA Demo Image", /* Name of image */
     {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}, /* Image data (fake) */
     256,   /* Length of image in bytes */
-    292923 /* Image signature */
+    0x4C6509CC /* Image signature */
 };
 
 /********* DATA STORAGE - Following would be in FLASH/EFUSE Normally **********/
@@ -67,6 +70,7 @@ uint32_t some_hash_function(uint8_t * image, uint32_t data_len)
         
         data_len--;
     }
+
     
     return hash;
 }
@@ -89,6 +93,9 @@ uint32_t some_crypto_function(uint32_t user_signature, uint8_t manf_public_key[]
         hash ^= temp;
     }
     
+    char buf[256];
+    snprintf(buf, 255, "Hash: %#lX\n", hash);
+    puts(buf);
     return hash;
 }
 
@@ -110,6 +117,8 @@ int checkfwupdate_armoured(void);
 int main(void)
 {
     //Check if fw update pending, apply if so
+    platform_init();
+    init_uart();
     checkfwupdate_original();
     
     //Check if fw update pending, apply if so
