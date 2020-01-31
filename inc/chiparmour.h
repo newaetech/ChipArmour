@@ -18,6 +18,10 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 */
+#include <stdint.h>
+
+#ifndef CHIPARMOUR_H
+#define CHIPARMOUR_H
 
 #include <stdint.h>
 
@@ -82,6 +86,11 @@ typedef struct {
     uint8_t invvalue;
 } ca_uint8_t;
 
+typedef struct {
+    ca_fptr_voidptr_t value;
+    ca_fptr_voidptr_t invvalue;
+} ca_funcpointer_t;
+
 /**
     Complicated return values.
 */
@@ -121,7 +130,7 @@ void ca_hal_mpu_init(void);
     static void * ca_functionname_valid_returnaddrs[ca_functionname_max_returns];
 
 #define CA_ROP_CHECK_VALID_RETURN(functionname) \
- { \
+do { \
     /* Validate we are returning to a valid call location */ \
     void * ca_ra = __builtin_extract_return_addr(__builtin_return_address(0)); \
     uint32_t ca_loopindx; \
@@ -137,7 +146,7 @@ void ca_hal_mpu_init(void);
     if (ca_loopindx > len(ca_functionname_valid_returnaddrs)) { \
         ca_panic(); \
     } \
- }
+ } while(0)
 
 /***************************************************************************
  Memory space armouring macros / function.
@@ -303,3 +312,5 @@ ca_return_t ca_compare_func_eq( ca_fptr_voidptr_array_t    get_value_func,
                              void *                     equal_func_param,
                              ca_fptr_voidptr_t          unequal_function,
                              void *                     unequal_func_param);
+
+#endif

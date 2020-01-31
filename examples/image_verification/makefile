@@ -34,13 +34,14 @@ TARGET = image-demo
 
 # List C source files here.
 # Header files (.h) are automatically pulled in.
-SRC += image.c ../../src/chiparmour.c
+SRC += image.c ../../src/chiparmour.c 
 
 # -----------------------------------------------------------------------------
 EXTRA_OPTS = NO_EXTRA_OPTS
 CFLAGS += -D$(EXTRA_OPTS)
 
 # Currently firmware
-FIRMWAREPATH = C:\dev\chipwhisperer\hardware\victims\firmware
+#FIRMWAREPATH = ~/cw/hardware/victims/firmware
+FIRMWAREPATH = C:/Users/adewar/Code/chipwhisperer/hardware/victims/firmware
 include $(FIRMWAREPATH)/Makefile.inc
 
