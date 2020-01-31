@@ -76,7 +76,7 @@ ca_uint32_t _ca_ret_u32(ca_uint32_t value, ca_uint32_t magic, uint32_t maxdelay)
         if (i == delay){
             ca_uint32_t rv;
             rv.value = local_value;
-            rv.invvale = ~local_value;
+            rv.invvalue = ~local_value;
             return rv;
         }
         if (i == delay){return invalid_rv;}
@@ -101,32 +101,33 @@ uint32_t _ca_limit_u32(ca_uint32_t input, ca_uint32_t min, ca_uint32_t max)
     
     //Quick version - just have multiple checks
     
-    if (input < min){
-        input = min;
+    if (input.value < min.value){
+        input.value = min.value;
     }
     
-    if (input > max){
-        input = max;
+    if (input.value > max.value){
+        input.value = max.value;
     }
   
-    if (input < min){
-        input = min;
+    if (input.value < min.value){
+        input.value = min.value;
     }
     
-    if (input > max){
-        input = max;
+    if (input.value > max.value){
+        input.value = max.value;
     }
     
-    if (input < min){
-        input = min;
+    if (input.value < min.value){
+        input.value = min.value;
     }
     
-    if (input > max){
-        input = max;
+    if (input.value > max.value){
+        input.value = max.value;
     }
   
     ca_landmine();
     ca_panic();
+    return input.value;
 }
 
 #define CA_CMP_LOOPS 3
@@ -139,7 +140,7 @@ ca_return_t _ca_compare_u32_eq(ca_uint32_t op1,
                    ca_uint32_t op2,
                   ca_funcpointer_t equal_function,
                   void * equal_func_param,
-                  ca_functpointer_t unequal_function,
+                  ca_funcpointer_t unequal_function,
                   void * unequal_func_param)
 {
     ca_landmine();
@@ -179,7 +180,7 @@ CA_DO_COMPARE:
                 if(equal_function) {
                     equal_function(equal_func_param);
                 }
-                return CA_TRUE;
+                return CA_SUCCESS;
             } else {
                 ca_fullpanic();
             }
@@ -192,7 +193,7 @@ CA_DO_COMPARE:
                 if(unequal_function){
                     unequal_function(unequal_func_param);
                 }                
-                return CA_FALSE;
+                return CA_FAIL;
             } else {
                 ca_fullpanic();
             }

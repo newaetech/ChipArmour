@@ -23,8 +23,6 @@ limitations under the License.
 #ifndef CHIPARMOUR_H
 #define CHIPARMOUR_H
 
-#include <stdint.h>
-
 /***************************************************************************
  Typedefs
  ***************************************************************************/
