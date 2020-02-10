@@ -103,28 +103,43 @@ uint32_t _ca_limit_u32(ca_uint32_t input, ca_uint32_t min, ca_uint32_t max)
     
     if (input.value < min.value){
         input.value = min.value;
+        input.invvalue = min.invval;
     }
     
     if (input.value > max.value){
         input.value = max.value;
+        input.invvalue = max.invval;
     }
   
+    if (value.invvalue != ~value.value){
+        ca_panic();
+    }
     if (input.value < min.value){
         input.value = min.value;
+        input.invvalue = min.invval;
     }
     
     if (input.value > max.value){
         input.value = max.value;
+        input.invvalue = max.invval;
     }
     
+    if (value.invvalue != ~value.value){
+        ca_panic();
+    }
     if (input.value < min.value){
         input.value = min.value;
+        input.invvalue = min.invval;
     }
     
     if (input.value > max.value){
         input.value = max.value;
+        input.invvalue = max.invval;
     }
   
+    if (value.invvalue != ~value.value){
+        ca_panic();
+    }
     ca_landmine();
     ca_panic();
     return input.value;
