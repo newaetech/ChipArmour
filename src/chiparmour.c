@@ -103,41 +103,41 @@ uint32_t _ca_limit_u32(ca_uint32_t input, ca_uint32_t min, ca_uint32_t max)
     
     if (input.value < min.value){
         input.value = min.value;
-        input.invvalue = min.invval;
+        input.invvalue = min.invvalue;
     }
     
     if (input.value > max.value){
         input.value = max.value;
-        input.invvalue = max.invval;
+        input.invvalue = max.invvalue;
     }
   
-    if (value.invvalue != ~value.value){
+    if (input.invvalue != ~input.value){
         ca_panic();
     }
     if (input.value < min.value){
         input.value = min.value;
-        input.invvalue = min.invval;
+        input.invvalue = min.invvalue;
     }
     
     if (input.value > max.value){
         input.value = max.value;
-        input.invvalue = max.invval;
+        input.invvalue = max.invvalue;
     }
     
-    if (value.invvalue != ~value.value){
+    if (input.invvalue != ~input.value){
         ca_panic();
     }
     if (input.value < min.value){
         input.value = min.value;
-        input.invvalue = min.invval;
+        input.invvalue = min.invvalue;
     }
     
     if (input.value > max.value){
         input.value = max.value;
-        input.invvalue = max.invval;
+        input.invvalue = max.invvalue;
     }
   
-    if (value.invvalue != ~value.value){
+    if (input.invvalue != ~input.value){
         ca_panic();
     }
     ca_landmine();
@@ -153,20 +153,20 @@ uint32_t _ca_limit_u32(ca_uint32_t input, ca_uint32_t min, ca_uint32_t max)
 */
 ca_return_t _ca_compare_u32_eq(ca_uint32_t op1,
                    ca_uint32_t op2,
-                  ca_funcpointer_t equal_function,
+                  ca_fptr_voidptr_t  equal_function,
                   void * equal_func_param,
-                  ca_funcpointer_t unequal_function,
+                  ca_fptr_voidptr_t  unequal_function,
                   void * unequal_func_param)
 {
     ca_landmine();
     
     //Mask values we'll jump to, make later FI skips increase chance we jump
     //to some invalid value.
-    (uint32_t) equal_function ^= (CA_CMP_LOOPS << 15);
-    (uint32_t) equal_func_param ^= (CA_CMP_LOOPS << 15);
+    equal_function = (CA_CMP_LOOPS << 15)^(uint32_t)equal_function;
+    equal_func_param = (CA_CMP_LOOPS << 15)^(uint32_t)equal_func_param;
     ca_landmine();
-    (uint32_t) unequal_function ^= (CA_CMP_LOOPS << 15);
-    (uint32_t) unequal_func_param ^= (CA_CMP_LOOPS << 15);
+    unequal_function = (CA_CMP_LOOPS << 15)^(uint32_t)unequal_function;
+    unequal_func_param = (CA_CMP_LOOPS << 15)^(uint32_t)unequal_func_param;
     
     uint32_t equal = 0;
     uint32_t unequal = 0;
@@ -243,10 +243,10 @@ CA_DO_LOOP:
         if(i == CA_CMP_LOOPS) { 
             ca_landmine();
             if (i == unequal) {
-                (uint32_t) equal_function ^= (equal << 15);
+                equal_function = (equal << 15) ^ (uint32_t)equal_function;
                 goto CA_DO_COMPARE;
             } else if (i == equal) {
-                (uint32_t) unequal_function ^= (unequal << 15);
+                unequal_function = (unequal << 15) ^ (uint32_t)unequal_function;
                 goto CA_DO_COMPARE;
             } else {
                 ca_panic();
