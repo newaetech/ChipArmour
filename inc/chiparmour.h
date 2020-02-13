@@ -259,7 +259,7 @@ ca_uint8_t ca_ret_u8(uint8_t value);
     Take an input value and ensure it falls within the given limits, by 
     returning the limited value.
 */
-inline uint32_t ca_limit_u32(uint32_t input, uint32_t min, uint32_t max)
+static inline uint32_t ca_limit_u32(uint32_t input, uint32_t min, uint32_t max)
 {
     return _ca_limit_u32(ca_retfast_u32(input), ca_retfast_u32(min), ca_retfast_u32(max));
 }
@@ -278,7 +278,7 @@ inline uint32_t ca_limit_u32(uint32_t input, uint32_t min, uint32_t max)
                     don't need a function called on differ.
 */
 
-inline ca_return_t ca_compare_u32_eq( uint32_t op1, 
+static inline ca_return_t ca_compare_u32_eq( uint32_t op1, 
                                uint32_t op2,
                                ca_fptr_voidptr_t equal_function,
                                void * equal_func_param,
@@ -304,6 +304,7 @@ inline ca_return_t ca_compare_u32_eq( uint32_t op1,
 */
 ca_return_t ca_compare_func_eq( ca_fptr_voidptr_array_t    get_value_func,
                              void *                     get_value_func_param,
+                             uint8_t *                  get_value_func_return,
                              uint8_t *                  expected_value_array,
                              uint32_t                   expected_value_len,
                              ca_fptr_voidptr_t           equal_function,
