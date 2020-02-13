@@ -244,10 +244,8 @@ void wrapper_some_crypto_function(void * input, uint8_t * output)
  */
 int checkfwupdate_armoured(void)
 {
-    puts("Ca state init");
     ca_state_machine(CA_STATE_INIT);
     
-    puts("Ca_compare_u32");
     //Flag indicates new firmware file present
     ca_compare_u32_eq(bootloader_flag,
                       FLAG_PENDING_UPDATE,
@@ -256,7 +254,6 @@ int checkfwupdate_armoured(void)
                       fw_update_stage1_failed,
                       (void *)&image);
     
-    puts("ca state 3");
     ca_state_machine(3);
     
     return 0;
@@ -269,18 +266,10 @@ void fw_update_stage1(void * image)
 {
     //CA_ROP_CHECK_VALID_RETURN(fw_update_stage1);
     
-    puts("State machine 1");
     ca_state_machine(1);
-    
-    puts("Past state machine 1");
-    image_t *img = (image_t *)image;
-    char buf[256];
-    snprintf(buf, 255, "Data = %X, len = %X", img->image_data, img->image_data_len);
-    puts(buf);
     uint32_t hash = some_hash_function(((image_t *)image)->image_data, ((image_t *)image)->image_data_len);
     
     //Possible new image - first we calculate hash of image data, then check signature
-    puts("compare crypto");
     uint32_t crypto_ret = 0;
     ca_compare_func_eq(wrapper_some_crypto_function,
                        (void *)&hash,
@@ -298,7 +287,6 @@ void fw_update_stage1_failed(void * image)
 {
     //Prevent out of order function calls
     ca_state_machine(1);
-    puts("Failed 1");
     
     //Flag not set - boot as normal
     bootloader_flag = 0;
@@ -312,7 +300,6 @@ void fw_update_stage2_failed(void * image)
 {
     ca_state_machine(2);
 
-    puts("Failed 2");
     //Flag not set - boot as normal
     bootloader_flag = 0;
     
