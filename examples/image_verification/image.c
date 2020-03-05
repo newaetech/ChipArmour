@@ -35,7 +35,7 @@ image_t image = {
     "CA Demo Image", /* Name of image */
     {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}, /* Image data (fake) */
     256,   /* Length of image in bytes */
-    0x4C6509CC /* Image signature */
+    0x4C6509CD /* Image signature */
 };
 
 /********* DATA STORAGE - Following would be in FLASH/EFUSE Normally **********/
@@ -126,10 +126,11 @@ int main(void)
     //Check if fw update pending, apply if so
     platform_init();
     init_uart();
-    //checkfwupdate_original();
+    trigger_setup();
+    checkfwupdate_original();
     
     //Check if fw update pending, apply if so
-    checkfwupdate_armoured();
+    //checkfwupdate_armoured();
     
     //No firmware update - start regular operations
     rtos_init();
@@ -179,6 +180,8 @@ int checkfwupdate_original(void)
     if(bootloader_flag == FLAG_PENDING_UPDATE){
         
         //Check signature matches proposed hashes
+        //glitch vulnerability here
+        trigger_high();
         if (validate_sigature(some_hash_function(image.image_data, image.image_data_len),
                               image.signature, manf_public_key)) {
             
@@ -188,6 +191,7 @@ int checkfwupdate_original(void)
             bootloader_flag = 0;
         }
     }
+    trigger_low();
     
     return 0;
 }

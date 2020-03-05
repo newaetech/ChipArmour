@@ -41,6 +41,7 @@ EXTRA_OPTS = NO_EXTRA_OPTS
 CFLAGS += -D$(EXTRA_OPTS)
 
 # Currently firmware
-FIRMWAREPATH = ~/cw/hardware/victims/firmware
+#FIRMWAREPATH = ~/cw/hardware/victims/firmware
+FIRMWAREPATH = C:/Users/adewar/Code/chipwhisperer/hardware/victims/firmware
 include $(FIRMWAREPATH)/Makefile.inc
 
