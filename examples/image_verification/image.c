@@ -164,6 +164,7 @@ int main(void)
  */
 int validate_sigature(uint32_t short_hash, uint32_t signature, uint8_t * pub_key)
 {
+    trigger_high();
     if (some_crypto_function(short_hash, pub_key) == signature){
         return 1;
     } else {
@@ -181,17 +182,17 @@ int checkfwupdate_original(void)
         
         //Check signature matches proposed hashes
         //glitch vulnerability here
-        trigger_high();
         if (validate_sigature(some_hash_function(image.image_data, image.image_data_len),
                               image.signature, manf_public_key)) {
             
+            trigger_low();
             boot_new_image(&image);
         } else {
             //signature failed
+            trigger_low();
             bootloader_flag = 0;
         }
     }
-    trigger_low();
     
     return 0;
 }
