@@ -22,6 +22,11 @@ limitations under the License.
 /* See header file for function description (in one place to avoid doxygen problems). */
 #include "chiparmour.h"
 
+#ifdef __GNUC__
+#pragma GCC optimize("O0")
+#else
+#error "Only GCC supported"
+#endif //__GNUC__
 /***************************************************************************
  Memory space 'secure1' armouring functions.
  ***************************************************************************/

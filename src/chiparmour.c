@@ -19,6 +19,11 @@ limitations under the License.
 
 */
 #include "../inc/chiparmour.h"
+#ifdef __GNUC__
+#pragma GCC optimize("O0")
+#else
+#error "Only GCC supported"
+#endif //__GNUC__
 
 #define ca_ret_u32(value)  _ca_ret_u32(value, cp_get_magic())
 
