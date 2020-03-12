@@ -39,7 +39,7 @@ SRC += image.c ../../../src/chiparmour.c
 # -----------------------------------------------------------------------------
 EXTRA_OPTS = NO_EXTRA_OPTS
 CFLAGS += -D$(EXTRA_OPTS)
-# OPT=0
+PLATFORM=CWLITEARM
 
 # Currently firmware
 #FIRMWAREPATH = ~/cw/hardware/victims/firmware

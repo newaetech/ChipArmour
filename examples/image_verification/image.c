@@ -35,7 +35,8 @@ image_t image = {
     "CA Demo Image", /* Name of image */
     {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}, /* Image data (fake) */
     256,   /* Length of image in bytes */
-    0x4C6509CD /* Image signature */
+    //0x4C6509CC /* Image signature */
+    0xDEADBEEF
 };
 
 /********* DATA STORAGE - Following would be in FLASH/EFUSE Normally **********/
@@ -94,9 +95,6 @@ uint32_t some_crypto_function(uint32_t user_signature, uint8_t manf_public_key[]
         hash ^= temp;
     }
     
-    char buf[256];
-    snprintf(buf, 255, "Hash: %#lX\n", hash);
-    puts(buf);
     return hash;
 }
 
@@ -127,10 +125,10 @@ int main(void)
     platform_init();
     init_uart();
     trigger_setup();
-    checkfwupdate_original();
+    //checkfwupdate_original();
     
     //Check if fw update pending, apply if so
-    //checkfwupdate_armoured();
+    checkfwupdate_armoured();
     
     //No firmware update - start regular operations
     rtos_init();
@@ -250,7 +248,7 @@ void wrapper_some_crypto_function(void * input, uint8_t * output)
 int checkfwupdate_armoured(void)
 {
     ca_state_machine(CA_STATE_INIT);
-    
+    trigger_high();
     //Flag indicates new firmware file present
     ca_compare_u32_eq(bootloader_flag,
                       FLAG_PENDING_UPDATE,
@@ -259,6 +257,7 @@ int checkfwupdate_armoured(void)
                       fw_update_stage1_failed,
                       (void *)&image);
     
+    trigger_low();
     ca_state_machine(3);
     
     return 0;

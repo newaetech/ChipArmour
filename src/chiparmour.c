@@ -19,6 +19,7 @@ limitations under the License.
 
 */
 #include "../inc/chiparmour.h"
+#include <hal.h>
 #ifdef __GNUC__
 #pragma GCC optimize("O0")
 #else
@@ -358,6 +359,7 @@ CA_DO_LOOP:
         for (j = 0; j < expected_value_len; j++) {
             volatile int a = expected_value_array[j];
             if (get_value_func_return[j] != expected_value_array[j]) {
+                trigger_low();
                 op_unequal = 1;
                 break;
             }
