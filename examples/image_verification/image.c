@@ -125,10 +125,12 @@ int main(void)
     platform_init();
     init_uart();
     trigger_setup();
-    //checkfwupdate_original();
-    
+    #ifdef IMAGE_UNARMOURED
+        checkfwupdate_original();
+    #elif defined(IMAGE_ARMOURED)
     //Check if fw update pending, apply if so
-    checkfwupdate_armoured();
+        checkfwupdate_armoured();
+    #endif
     
     //No firmware update - start regular operations
     rtos_init();

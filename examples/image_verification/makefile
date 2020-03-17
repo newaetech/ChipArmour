@@ -43,6 +43,6 @@ PLATFORM=CWLITEARM
 
 # Currently firmware
 #FIRMWAREPATH = ~/cw/hardware/victims/firmware
-FIRMWAREPATH = C:/Users/adewar/Code/chipwhisperer/hardware/victims/firmware
+FIRMWAREPATH = F:/chipwhisperer/hardware/victims/firmware
 include $(FIRMWAREPATH)/Makefile.inc
 

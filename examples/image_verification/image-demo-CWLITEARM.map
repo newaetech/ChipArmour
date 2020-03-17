@@ -1,17 +1,17 @@
 Archive member included to satisfy reference by file (symbol)
 
-c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-errno.o)
+f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-errno.o)
                               objdir/stm32f3_sysmem.o (__errno)
-c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-exit.o)
-                              c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/crt0.o (exit)
-c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-impure.o)
-                              c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-exit.o) (_global_impure_ptr)
-c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-init.o)
-                              c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/crt0.o (__libc_init_array)
-c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-memcpy-stub.o)
+f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-exit.o)
+                              f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o (exit)
+f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-impure.o)
+                              f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-exit.o) (_global_impure_ptr)
+f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-init.o)
+                              f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o (__libc_init_array)
+f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-memcpy-stub.o)
                               objdir/../../../src/chiparmour.o (memcpy)
-c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-memset.o)
-                              c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/crt0.o (memset)
+f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-memset.o)
+                              f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o (memset)
 
 Allocating common symbols
 Common symbol       size              file
@@ -20,36 +20,71 @@ UartHandle          0x70              objdir/stm32f3_hal.o
 
 Discarded input sections
 
- .text          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crti.o
- .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crti.o
- .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crti.o
- .data          0x00000000        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
- .text          0x00000000       0x74 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/crt0.o
- .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/crt0.o
- .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/crt0.o
- .ARM.extab     0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/crt0.o
- .ARM.exidx     0x00000000        0x8 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/crt0.o
+ .text          0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crti.o
+ .data          0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crti.o
+ .bss           0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crti.o
+ .data          0x00000000        0x4 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crtbegin.o
+ .text          0x00000000       0x74 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
+ .data          0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
+ .bss           0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
+ .ARM.extab     0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
+ .ARM.exidx     0x00000000        0x8 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
  .ARM.attributes
-                0x00000000       0x1c c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/crt0.o
+                0x00000000       0x1c f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
  .text          0x00000000        0x0 objdir/image.o
  .bss           0x00000000        0x0 objdir/image.o
+ .text.fw_update_stage1_failed
+                0x00000000       0x14 objdir/image.o
+ .text.fw_update_stage2_failed
+                0x00000000       0x14 objdir/image.o
+ .text.boot_new_image_armoured
+                0x00000000       0x28 objdir/image.o
+ .text.fw_update_stage1
+                0x00000000       0x4c objdir/image.o
+ .text.wrapper_some_crypto_function
+                0x00000000       0x14 objdir/image.o
  .text.rtos_loop
                 0x00000000        0x2 objdir/image.o
- .text.boot_new_image
-                0x00000000       0x24 objdir/image.o
- .text.validate_sigature
-                0x00000000       0x1c objdir/image.o
- .text.checkfwupdate_original
-                0x00000000       0x48 objdir/image.o
+ .text._ca_panic
+                0x00000000       0x10 objdir/image.o
+ .text.checkfwupdate_armoured
+                0x00000000       0x64 objdir/image.o
  .text          0x00000000        0x0 objdir/../../../src/chiparmour.o
+ .data          0x00000000        0x4 objdir/../../../src/chiparmour.o
+ .bss           0x00000000        0x8 objdir/../../../src/chiparmour.o
  .text._ca_ret_u32
                 0x00000000      0x2c0 objdir/../../../src/chiparmour.o
  .text._ca_limit_u32
                 0x00000000      0x210 objdir/../../../src/chiparmour.o
+ .text._ca_compare_u32_eq
+                0x00000000      0x350 objdir/../../../src/chiparmour.o
+ .text.ca_compare_func_eq
+                0x00000000      0x394 objdir/../../../src/chiparmour.o
+ .text.ca_state_machine
+                0x00000000       0x6c objdir/../../../src/chiparmour.o
  .text.ca_atmine
                 0x00000000       0x14 objdir/../../../src/chiparmour.o
  .text.ca_atwait
                 0x00000000       0x14 objdir/../../../src/chiparmour.o
+ .text.ca_fastwait
+                0x00000000       0x10 objdir/../../../src/chiparmour.o
+ .text.ca_retfast_u32
+                0x00000000       0x3a objdir/../../../src/chiparmour.o
+ .rodata        0x00000000       0x10 objdir/../../../src/chiparmour.o
+ .text.ca_fullpanic
+                0x00000000       0x14 objdir/../../../src/chiparmour.o
+ .debug_info    0x00000000     0x177a objdir/../../../src/chiparmour.o
+ .debug_abbrev  0x00000000      0x2a9 objdir/../../../src/chiparmour.o
+ .debug_loc     0x00000000      0x704 objdir/../../../src/chiparmour.o
+ .debug_aranges
+                0x00000000       0x58 objdir/../../../src/chiparmour.o
+ .debug_ranges  0x00000000       0x48 objdir/../../../src/chiparmour.o
+ .debug_line    0x00000000      0x57b objdir/../../../src/chiparmour.o
+ .debug_str     0x00000000      0x4be objdir/../../../src/chiparmour.o
+ .comment       0x00000000       0x80 objdir/../../../src/chiparmour.o
+ .debug_frame   0x00000000      0x14c objdir/../../../src/chiparmour.o
+ .ARM.attributes
+                0x00000000       0x30 objdir/../../../src/chiparmour.o
  .text          0x00000000        0x0 objdir/stm32f3_hal.o
  .data          0x00000000        0x0 objdir/stm32f3_hal.o
  .bss           0x00000000        0x0 objdir/stm32f3_hal.o
@@ -78,69 +113,72 @@ Discarded input sections
  .data          0x00000000        0x0 objdir/stm32f3_sysmem.o
  .bss           0x00000000        0x4 objdir/stm32f3_sysmem.o
  .text._sbrk    0x00000000       0x34 objdir/stm32f3_sysmem.o
- .debug_info    0x00000000      0xa34 objdir/stm32f3_sysmem.o
- .debug_abbrev  0x00000000      0x201 objdir/stm32f3_sysmem.o
- .debug_loc     0x00000000       0x6a objdir/stm32f3_sysmem.o
+ .debug_info    0x00000000      0xabf objdir/stm32f3_sysmem.o
+ .debug_abbrev  0x00000000      0x237 objdir/stm32f3_sysmem.o
+ .debug_loc     0x00000000       0x74 objdir/stm32f3_sysmem.o
  .debug_aranges
                 0x00000000       0x20 objdir/stm32f3_sysmem.o
  .debug_ranges  0x00000000       0x10 objdir/stm32f3_sysmem.o
- .debug_line    0x00000000      0x192 objdir/stm32f3_sysmem.o
- .debug_str     0x00000000      0x63c objdir/stm32f3_sysmem.o
- .comment       0x00000000       0x80 objdir/stm32f3_sysmem.o
+ .debug_line    0x00000000      0x18d objdir/stm32f3_sysmem.o
+ .debug_str     0x00000000      0x628 objdir/stm32f3_sysmem.o
+ .comment       0x00000000       0x77 objdir/stm32f3_sysmem.o
  .debug_frame   0x00000000       0x2c objdir/stm32f3_sysmem.o
  .ARM.attributes
-                0x00000000       0x33 objdir/stm32f3_sysmem.o
+                0x00000000       0x2e objdir/stm32f3_sysmem.o
  .text          0x00000000       0x14 objdir/stm32f3_startup.o
  .data          0x00000000        0x0 objdir/stm32f3_startup.o
  .bss           0x00000000        0x0 objdir/stm32f3_startup.o
- .text          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-errno.o)
- .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-errno.o)
- .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-errno.o)
- .text.__errno  0x00000000        0xc c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-errno.o)
- .debug_frame   0x00000000       0x20 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-errno.o)
+ .text          0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-errno.o)
+ .data          0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-errno.o)
+ .bss           0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-errno.o)
+ .text.__errno  0x00000000        0xc f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-errno.o)
+ .debug_frame   0x00000000       0x20 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-errno.o)
  .ARM.attributes
-                0x00000000       0x2e c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-errno.o)
- .text          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-exit.o)
- .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-exit.o)
- .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-exit.o)
- .text.exit     0x00000000       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-exit.o)
- .debug_frame   0x00000000       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-exit.o)
+                0x00000000       0x2e f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-errno.o)
+ .text          0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-exit.o)
+ .data          0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-exit.o)
+ .bss           0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-exit.o)
+ .text.exit     0x00000000       0x28 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-exit.o)
+ .debug_frame   0x00000000       0x28 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-exit.o)
  .ARM.attributes
-                0x00000000       0x2e c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-exit.o)
- .text          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-impure.o)
- .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-impure.o)
- .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-impure.o)
+                0x00000000       0x2e f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-exit.o)
+ .text          0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-impure.o)
+ .data          0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-impure.o)
  .data._impure_ptr
-                0x00000000        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-impure.o)
+                0x00000000        0x4 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-impure.o)
  .data.impure_data
-                0x00000000       0x60 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-impure.o)
+                0x00000000       0x60 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-impure.o)
  .rodata._global_impure_ptr
-                0x00000000        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-impure.o)
+                0x00000000        0x4 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-impure.o)
  .ARM.attributes
-                0x00000000       0x2e c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-impure.o)
- .text          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-init.o)
- .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-init.o)
- .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-init.o)
- .text          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-memcpy-stub.o)
- .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-memcpy-stub.o)
- .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-memcpy-stub.o)
- .text          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-memset.o)
- .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-memset.o)
- .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-memset.o)
- .text.memset   0x00000000       0x10 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-memset.o)
- .debug_frame   0x00000000       0x20 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-memset.o)
+                0x00000000       0x2e f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-impure.o)
+ .text          0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-init.o)
+ .data          0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-init.o)
+ .bss           0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-init.o)
+ .text          0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-memcpy-stub.o)
+ .data          0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-memcpy-stub.o)
+ .bss           0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-memcpy-stub.o)
+ .text.memcpy   0x00000000       0x1c f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x00000000       0x28 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-memcpy-stub.o)
  .ARM.attributes
-                0x00000000       0x2e c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-memset.o)
- .text          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtend.o
- .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtend.o
- .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtend.o
- .eh_frame      0x00000000        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtend.o
- .jcr           0x00000000        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtend.o
+                0x00000000       0x2e f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-memcpy-stub.o)
+ .text          0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-memset.o)
+ .data          0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-memset.o)
+ .text.memset   0x00000000       0x10 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-memset.o)
+ .debug_frame   0x00000000       0x20 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-memset.o)
  .ARM.attributes
-                0x00000000       0x2e c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtend.o
- .text          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtn.o
- .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtn.o
- .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtn.o
+                0x00000000       0x2e f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-memset.o)
+ .text          0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crtend.o
+ .data          0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crtend.o
+ .bss           0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crtend.o
+ .eh_frame      0x00000000        0x4 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crtend.o
+ .ARM.attributes
+                0x00000000       0x2e f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crtend.o
+ .text          0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crtn.o
+ .data          0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crtn.o
+ .bss           0x00000000        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crtn.o
 
 Memory Configuration
 
@@ -151,28 +189,28 @@ ROM              0x08000000         0x00010000         xr
 
 Linker script and memory map
 
-LOAD c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crti.o
-LOAD c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
-LOAD c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/crt0.o
+LOAD f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crti.o
+LOAD f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crtbegin.o
+LOAD f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
 LOAD objdir/image.o
 LOAD objdir/../../../src/chiparmour.o
 LOAD objdir/stm32f3_hal.o
 LOAD objdir/stm32f3_hal_lowlevel.o
 LOAD objdir/stm32f3_sysmem.o
 LOAD objdir/stm32f3_startup.o
-LOAD c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libm.a
-LOAD c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libm.a
+LOAD f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libm.a
+LOAD f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libm.a
 START GROUP
-LOAD c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m\libgcc.a
-LOAD c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a
-LOAD c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a
+LOAD f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp\libgcc.a
+LOAD f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a
+LOAD f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a
 END GROUP
 START GROUP
-LOAD c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m\libgcc.a
-LOAD c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a
+LOAD f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp\libgcc.a
+LOAD f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a
 END GROUP
-LOAD c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtend.o
-LOAD c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtn.o
+LOAD f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crtend.o
+LOAD f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crtn.o
                 0x20003000                _estack = 0x20003000
                 0x00000000                _Min_Heap_Size = 0x0
                 0x00000400                _Min_Stack_Size = 0x400
@@ -184,260 +222,220 @@ LOAD c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/g
                 0x08000000                g_pfnVectors
                 0x08000188                . = ALIGN (0x4)
 
-.text           0x08000188     0x175c
+.text           0x08000188      0xedc
                 0x08000188                . = ALIGN (0x4)
  *(.text)
- .text          0x08000188       0x6c c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
+ .text          0x08000188       0x40 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crtbegin.o
  *(.text*)
- .text.fw_update_stage1_failed
-                0x080001f4       0x14 objdir/image.o
-                0x080001f4                fw_update_stage1_failed
- .text.fw_update_stage2_failed
-                0x08000208       0x14 objdir/image.o
-                0x08000208                fw_update_stage2_failed
- .text.puts     0x0800021c       0x1c objdir/image.o
-                0x0800021c                puts
- .text.boot_new_image_armoured
-                0x08000238       0x28 objdir/image.o
-                0x08000238                boot_new_image_armoured
+ .text.puts     0x080001c8       0x1c objdir/image.o
+                0x080001c8                puts
  .text.some_hash_function
-                0x08000260       0x16 objdir/image.o
-                0x08000260                some_hash_function
- *fill*         0x08000276        0x2 
- .text.fw_update_stage1
-                0x08000278       0x50 objdir/image.o
-                0x08000278                fw_update_stage1
+                0x080001e4       0x16 objdir/image.o
+                0x080001e4                some_hash_function
  .text.some_crypto_function
-                0x080002c8       0x20 objdir/image.o
-                0x080002c8                some_crypto_function
- .text.wrapper_some_crypto_function
-                0x080002e8       0x14 objdir/image.o
-                0x080002e8                wrapper_some_crypto_function
+                0x080001fa       0x24 objdir/image.o
+                0x080001fa                some_crypto_function
+ *fill*         0x0800021e        0x2 
  .text.rtos_init
-                0x080002fc        0xc objdir/image.o
-                0x080002fc                rtos_init
- .text._ca_panic
-                0x08000308       0x10 objdir/image.o
-                0x08000308                _ca_panic
- .text.checkfwupdate_armoured
-                0x08000318       0x64 objdir/image.o
-                0x08000318                checkfwupdate_armoured
+                0x08000220        0xc objdir/image.o
+                0x08000220                rtos_init
+ .text.boot_new_image
+                0x0800022c       0x24 objdir/image.o
+                0x0800022c                boot_new_image
+ .text.validate_sigature
+                0x08000250       0x1c objdir/image.o
+                0x08000250                validate_sigature
+ .text.checkfwupdate_original
+                0x0800026c       0x48 objdir/image.o
+                0x0800026c                checkfwupdate_original
  .text.startup.main
-                0x0800037c       0x18 objdir/image.o
-                0x0800037c                main
- .text._ca_compare_u32_eq
-                0x08000394      0x350 objdir/../../../src/chiparmour.o
-                0x08000394                _ca_compare_u32_eq
- .text.ca_compare_func_eq
-                0x080006e4      0x394 objdir/../../../src/chiparmour.o
-                0x080006e4                ca_compare_func_eq
- .text.ca_state_machine
-                0x08000a78       0x6c objdir/../../../src/chiparmour.o
-                0x08000a78                ca_state_machine
- .text.ca_fastwait
-                0x08000ae4       0x10 objdir/../../../src/chiparmour.o
-                0x08000ae4                ca_fastwait
- .text.ca_retfast_u32
-                0x08000af4       0x3a objdir/../../../src/chiparmour.o
-                0x08000af4                ca_retfast_u32
- *fill*         0x08000b2e        0x2 
- .text.ca_fullpanic
-                0x08000b30       0x14 objdir/../../../src/chiparmour.o
-                0x08000b30                ca_fullpanic
+                0x080002b4       0x18 objdir/image.o
+                0x080002b4                main
  .text.platform_init
-                0x08000b44       0x80 objdir/stm32f3_hal.o
-                0x08000b44                platform_init
+                0x080002cc       0x80 objdir/stm32f3_hal.o
+                0x080002cc                platform_init
  .text.init_uart
-                0x08000bc4       0x78 objdir/stm32f3_hal.o
-                0x08000bc4                init_uart
+                0x0800034c       0x7c objdir/stm32f3_hal.o
+                0x0800034c                init_uart
  .text.trigger_setup
-                0x08000c3c       0x48 objdir/stm32f3_hal.o
-                0x08000c3c                trigger_setup
+                0x080003c8       0x48 objdir/stm32f3_hal.o
+                0x080003c8                trigger_setup
  .text.trigger_high
-                0x08000c84        0xe objdir/stm32f3_hal.o
-                0x08000c84                trigger_high
+                0x08000410        0xe objdir/stm32f3_hal.o
+                0x08000410                trigger_high
  .text.trigger_low
-                0x08000c92        0xe objdir/stm32f3_hal.o
-                0x08000c92                trigger_low
- .text.putch    0x08000ca0       0x20 objdir/stm32f3_hal.o
-                0x08000ca0                putch
+                0x0800041e        0xe objdir/stm32f3_hal.o
+                0x0800041e                trigger_low
+ .text.putch    0x0800042c       0x20 objdir/stm32f3_hal.o
+                0x0800042c                putch
  .text.HAL_GetTick
-                0x08000cc0       0x10 objdir/stm32f3_hal_lowlevel.o
-                0x08000cc0                HAL_GetTick
+                0x0800044c       0x10 objdir/stm32f3_hal_lowlevel.o
+                0x0800044c                HAL_GetTick
  .text.HAL_RCC_OscConfig
-                0x08000cd0      0x4d4 objdir/stm32f3_hal_lowlevel.o
-                0x08000cd0                HAL_RCC_OscConfig
+                0x0800045c      0x4d4 objdir/stm32f3_hal_lowlevel.o
+                0x0800045c                HAL_RCC_OscConfig
  .text.HAL_RCC_ClockConfig
-                0x080011a4      0x14c objdir/stm32f3_hal_lowlevel.o
-                0x080011a4                HAL_RCC_ClockConfig
+                0x08000930      0x14c objdir/stm32f3_hal_lowlevel.o
+                0x08000930                HAL_RCC_ClockConfig
  .text.HAL_GPIO_Init
-                0x080012f0      0x184 objdir/stm32f3_hal_lowlevel.o
-                0x080012f0                HAL_GPIO_Init
+                0x08000a7c      0x184 objdir/stm32f3_hal_lowlevel.o
+                0x08000a7c                HAL_GPIO_Init
  .text.HAL_GPIO_WritePin
-                0x08001474        0xa objdir/stm32f3_hal_lowlevel.o
-                0x08001474                HAL_GPIO_WritePin
- *fill*         0x0800147e        0x2 
+                0x08000c00        0xa objdir/stm32f3_hal_lowlevel.o
+                0x08000c00                HAL_GPIO_WritePin
+ *fill*         0x08000c0a        0x2 
  .text.UART_SetConfig
-                0x08001480      0x1e0 objdir/stm32f3_hal_lowlevel.o
-                0x08001480                UART_SetConfig
+                0x08000c0c      0x1ec objdir/stm32f3_hal_lowlevel.o
+                0x08000c0c                UART_SetConfig
  .text.UART_WaitOnFlagUntilTimeout
-                0x08001660       0x58 objdir/stm32f3_hal_lowlevel.o
-                0x08001660                UART_WaitOnFlagUntilTimeout
+                0x08000df8       0x58 objdir/stm32f3_hal_lowlevel.o
+                0x08000df8                UART_WaitOnFlagUntilTimeout
  .text.UART_CheckIdleState
-                0x080016b8       0x64 objdir/stm32f3_hal_lowlevel.o
-                0x080016b8                UART_CheckIdleState
+                0x08000e50       0x64 objdir/stm32f3_hal_lowlevel.o
+                0x08000e50                UART_CheckIdleState
  .text.HAL_UART_Init
-                0x0800171c       0x56 objdir/stm32f3_hal_lowlevel.o
-                0x0800171c                HAL_UART_Init
+                0x08000eb4       0x56 objdir/stm32f3_hal_lowlevel.o
+                0x08000eb4                HAL_UART_Init
  .text.HAL_UART_Transmit
-                0x08001772       0xae objdir/stm32f3_hal_lowlevel.o
-                0x08001772                HAL_UART_Transmit
+                0x08000f0a       0xac objdir/stm32f3_hal_lowlevel.o
+                0x08000f0a                HAL_UART_Transmit
+ *fill*         0x08000fb6        0x2 
  .text.Reset_Handler
-                0x08001820       0x48 objdir/stm32f3_startup.o
-                0x08001820                Reset_Handler
+                0x08000fb8       0x48 objdir/stm32f3_startup.o
+                0x08000fb8                Reset_Handler
  .text.Default_Handler
-                0x08001868        0x2 objdir/stm32f3_startup.o
-                0x08001868                DebugMon_Handler
-                0x08001868                HardFault_Handler
-                0x08001868                SysTick_Handler
-                0x08001868                PendSV_Handler
-                0x08001868                NMI_Handler
-                0x08001868                UsageFault_Handler
-                0x08001868                Default_Handler
-                0x08001868                MemManage_Handler
-                0x08001868                SVC_Handler
-                0x08001868                BusFault_Handler
- *fill*         0x0800186a        0x2 
+                0x08001000        0x2 objdir/stm32f3_startup.o
+                0x08001000                DebugMon_Handler
+                0x08001000                HardFault_Handler
+                0x08001000                SysTick_Handler
+                0x08001000                PendSV_Handler
+                0x08001000                NMI_Handler
+                0x08001000                UsageFault_Handler
+                0x08001000                Default_Handler
+                0x08001000                MemManage_Handler
+                0x08001000                SVC_Handler
+                0x08001000                BusFault_Handler
+ *fill*         0x08001002        0x2 
  .text.__libc_init_array
-                0x0800186c       0x48 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-init.o)
-                0x0800186c                __libc_init_array
- .text.memcpy   0x080018b4       0x16 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-memcpy-stub.o)
-                0x080018b4                memcpy
+                0x08001004       0x48 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-init.o)
+                0x08001004                __libc_init_array
  *(.glue_7)
- .glue_7        0x080018ca        0x0 linker stubs
+ .glue_7        0x0800104c        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x080018ca        0x0 linker stubs
+ .glue_7t       0x0800104c        0x0 linker stubs
  *(.eh_frame)
- *fill*         0x080018ca        0x2 
- .eh_frame      0x080018cc        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
+ .eh_frame      0x0800104c        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crtbegin.o
  *(.init)
- .init          0x080018cc        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crti.o
-                0x080018cc                _init
- .init          0x080018d0        0x8 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtn.o
+ .init          0x0800104c        0x4 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crti.o
+                0x0800104c                _init
+ .init          0x08001050        0x8 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crtn.o
  *(.fini)
- .fini          0x080018d8        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crti.o
-                0x080018d8                _fini
- .fini          0x080018dc        0x8 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtn.o
-                0x080018e4                . = ALIGN (0x4)
-                0x080018e4                _etext = .
+ .fini          0x08001058        0x4 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crti.o
+                0x08001058                _fini
+ .fini          0x0800105c        0x8 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crtn.o
+                0x08001064                . = ALIGN (0x4)
+                0x08001064                _etext = .
 
-.vfp11_veneer   0x080018e4        0x0
- .vfp11_veneer  0x080018e4        0x0 linker stubs
+.vfp11_veneer   0x08001064        0x0
+ .vfp11_veneer  0x08001064        0x0 linker stubs
 
-.v4_bx          0x080018e4        0x0
- .v4_bx         0x080018e4        0x0 linker stubs
+.v4_bx          0x08001064        0x0
+ .v4_bx         0x08001064        0x0 linker stubs
 
-.iplt           0x080018e4        0x0
- .iplt          0x080018e4        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
+.iplt           0x08001064        0x0
+ .iplt          0x08001064        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crtbegin.o
 
-.rodata         0x080018e4       0x38
-                0x080018e4                . = ALIGN (0x4)
+.rodata         0x08001064       0x28
+                0x08001064                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x080018e4       0x10 objdir/../../../src/chiparmour.o
- .rodata        0x080018f4        0x4 objdir/stm32f3_hal_lowlevel.o
+ .rodata        0x08001064        0x4 objdir/stm32f3_hal_lowlevel.o
  *(.rodata*)
  .rodata.str1.1
-                0x080018f8       0x24 objdir/image.o
+                0x08001068       0x24 objdir/image.o
                                  0x26 (size before relaxing)
-                0x0800191c                . = ALIGN (0x4)
+                0x0800108c                . = ALIGN (0x4)
 
-.rel.dyn        0x0800191c        0x0
- .rel.iplt      0x0800191c        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
+.rel.dyn        0x0800108c        0x0
+ .rel.iplt      0x0800108c        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crtbegin.o
 
-.ARM.extab      0x0800191c        0x0
-                0x0800191c                . = ALIGN (0x4)
+.ARM.extab      0x0800108c        0x0
+                0x0800108c                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0800191c                . = ALIGN (0x4)
+                0x0800108c                . = ALIGN (0x4)
 
-.ARM            0x0800191c        0x0
-                0x0800191c                . = ALIGN (0x4)
-                0x0800191c                __exidx_start = .
+.ARM            0x0800108c        0x0
+                0x0800108c                . = ALIGN (0x4)
+                0x0800108c                __exidx_start = .
  *(.ARM.exidx*)
-                0x0800191c                __exidx_end = .
-                0x0800191c                . = ALIGN (0x4)
+                0x0800108c                __exidx_end = .
+                0x0800108c                . = ALIGN (0x4)
 
-.preinit_array  0x0800191c        0x0
-                0x0800191c                . = ALIGN (0x4)
-                0x0800191c                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x0800108c        0x0
+                0x0800108c                . = ALIGN (0x4)
+                0x0800108c                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0800191c                PROVIDE (__preinit_array_end, .)
-                0x0800191c                . = ALIGN (0x4)
+                0x0800108c                PROVIDE (__preinit_array_end = .)
+                0x0800108c                . = ALIGN (0x4)
 
-.init_array     0x0800191c        0x4
-                0x0800191c                . = ALIGN (0x4)
-                0x0800191c                PROVIDE (__init_array_start, .)
- *(SORT(.init_array.*))
+.init_array     0x0800108c        0x4
+                0x0800108c                . = ALIGN (0x4)
+                0x0800108c                PROVIDE (__init_array_start = .)
+ *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x0800191c        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
-                0x08001920                PROVIDE (__init_array_end, .)
-                0x08001920                . = ALIGN (0x4)
+ .init_array    0x0800108c        0x4 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crtbegin.o
+                0x08001090                PROVIDE (__init_array_end = .)
+                0x08001090                . = ALIGN (0x4)
 
-.fini_array     0x08001920        0x4
-                0x08001920                . = ALIGN (0x4)
-                [!provide]                PROVIDE (__fini_array_start, .)
- *(SORT(.fini_array.*))
+.fini_array     0x08001090        0x4
+                0x08001090                . = ALIGN (0x4)
+                [!provide]                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08001920        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
-                [!provide]                PROVIDE (__fini_array_end, .)
-                0x08001924                . = ALIGN (0x4)
-                0x08001924                _sidata = LOADADDR (.data)
+ .fini_array    0x08001090        0x4 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crtbegin.o
+                [!provide]                PROVIDE (__fini_array_end = .)
+                0x08001094                . = ALIGN (0x4)
+                0x08001094                _sidata = LOADADDR (.data)
 
-.data           0x20000000      0x458 load address 0x08001924
+.data           0x20000000      0x454 load address 0x08001094
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
  .data          0x20000000      0x454 objdir/image.o
                 0x20000004                manf_public_key
                 0x2000000c                image
- .data          0x20000454        0x4 objdir/../../../src/chiparmour.o
  *(.data*)
-                0x20000458                . = ALIGN (0x4)
-                0x20000458                _edata = .
+                0x20000454                . = ALIGN (0x4)
+                0x20000454                _edata = .
 
-.jcr            0x20000458        0x0 load address 0x08001d7c
- .jcr           0x20000458        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
+.igot.plt       0x20000454        0x0 load address 0x080014e8
+ .igot.plt      0x20000454        0x0 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crtbegin.o
+                0x20000454                . = ALIGN (0x4)
 
-.igot.plt       0x20000458        0x0 load address 0x08001d7c
- .igot.plt      0x20000458        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
-                0x20000458                . = ALIGN (0x4)
-
-.bss            0x20000458       0x9c load address 0x08001d7c
-                0x20000458                _sbss = .
-                0x20000458                __bss_start__ = _sbss
+.bss            0x20000454       0x94 load address 0x080014e8
+                0x20000454                _sbss = .
+                0x20000454                __bss_start__ = _sbss
  *(.bss)
- .bss           0x20000458       0x1c c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
- .bss           0x20000474        0x8 objdir/../../../src/chiparmour.o
- .bss           0x2000047c        0x8 objdir/stm32f3_hal_lowlevel.o
-                0x2000047c                hal_sys_tick
-                0x20000480                uwTick
+ .bss           0x20000454       0x1c f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crtbegin.o
+ .bss           0x20000470        0x8 objdir/stm32f3_hal_lowlevel.o
+                0x20000470                hal_sys_tick
+                0x20000474                uwTick
  *(.bss*)
  *(COMMON)
- COMMON         0x20000484       0x70 objdir/stm32f3_hal.o
-                0x20000484                UartHandle
-                0x200004f4                . = ALIGN (0x4)
-                0x200004f4                _ebss = .
-                0x200004f4                __bss_end__ = _ebss
+ COMMON         0x20000478       0x70 objdir/stm32f3_hal.o
+                0x20000478                UartHandle
+                0x200004e8                . = ALIGN (0x4)
+                0x200004e8                _ebss = .
+                0x200004e8                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x200004f4      0x404 load address 0x08001d7c
-                0x200004f8                . = ALIGN (0x8)
- *fill*         0x200004f4        0x4 
-                0x200004f8                PROVIDE (end, .)
-                [!provide]                PROVIDE (_end, .)
-                0x200004f8                . = (. + _Min_Heap_Size)
-                0x200008f8                . = (. + _Min_Stack_Size)
- *fill*         0x200004f8      0x400 
-                0x200008f8                . = ALIGN (0x8)
+                0x200004e8      0x400 load address 0x080014e8
+                0x200004e8                . = ALIGN (0x8)
+                0x200004e8                PROVIDE (end = .)
+                [!provide]                PROVIDE (_end = .)
+                0x200004e8                . = (. + _Min_Heap_Size)
+                0x200008e8                . = (. + _Min_Stack_Size)
+ *fill*         0x200004e8      0x400 
+                0x200008e8                . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -445,100 +443,84 @@ LOAD c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/g
  libgcc.a(*)
 
 .ARM.attributes
-                0x00000000       0x2c
+                0x00000000       0x30
  *(.ARM.attributes)
  .ARM.attributes
-                0x00000000       0x1e c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crti.o
+                0x00000000       0x1e f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crti.o
  .ARM.attributes
-                0x0000001e       0x2e c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
+                0x0000001e       0x2e f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crtbegin.o
  .ARM.attributes
-                0x0000004c       0x33 objdir/image.o
+                0x0000004c       0x2e objdir/image.o
  .ARM.attributes
-                0x0000007f       0x30 objdir/../../../src/chiparmour.o
+                0x0000007a       0x2e objdir/stm32f3_hal.o
  .ARM.attributes
-                0x000000af       0x33 objdir/stm32f3_hal.o
+                0x000000a8       0x2e objdir/stm32f3_hal_lowlevel.o
  .ARM.attributes
-                0x000000e2       0x33 objdir/stm32f3_hal_lowlevel.o
+                0x000000d6       0x25 objdir/stm32f3_startup.o
  .ARM.attributes
-                0x00000115       0x21 objdir/stm32f3_startup.o
+                0x000000fb       0x2e f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-init.o)
  .ARM.attributes
-                0x00000136       0x2e c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-init.o)
- .ARM.attributes
-                0x00000164       0x2e c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-memcpy-stub.o)
- .ARM.attributes
-                0x00000192       0x1e c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtn.o
+                0x00000129       0x1e f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crtn.o
 OUTPUT(image-demo-CWLITEARM.elf elf32-littlearm)
 
-.debug_info     0x00000000     0x633d
- .debug_info    0x00000000      0x8de objdir/image.o
- .debug_info    0x000008de     0x177a objdir/../../../src/chiparmour.o
- .debug_info    0x00002058     0x1738 objdir/stm32f3_hal.o
- .debug_info    0x00003790     0x2bad objdir/stm32f3_hal_lowlevel.o
+.debug_info     0x00000000     0x5331
+ .debug_info    0x00000000      0x9a6 objdir/image.o
+ .debug_info    0x000009a6     0x1886 objdir/stm32f3_hal.o
+ .debug_info    0x0000222c     0x3105 objdir/stm32f3_hal_lowlevel.o
 
-.debug_abbrev   0x00000000      0xc89
- .debug_abbrev  0x00000000      0x290 objdir/image.o
- .debug_abbrev  0x00000290      0x2a9 objdir/../../../src/chiparmour.o
- .debug_abbrev  0x00000539      0x29f objdir/stm32f3_hal.o
- .debug_abbrev  0x000007d8      0x4b1 objdir/stm32f3_hal_lowlevel.o
+.debug_abbrev   0x00000000      0xb2e
+ .debug_abbrev  0x00000000      0x30e objdir/image.o
+ .debug_abbrev  0x0000030e      0x2dc objdir/stm32f3_hal.o
+ .debug_abbrev  0x000005ea      0x544 objdir/stm32f3_hal_lowlevel.o
 
-.debug_loc      0x00000000     0x20ae
- .debug_loc     0x00000000      0x65b objdir/image.o
- .debug_loc     0x0000065b      0x704 objdir/../../../src/chiparmour.o
- .debug_loc     0x00000d5f      0x186 objdir/stm32f3_hal.o
- .debug_loc     0x00000ee5     0x11c9 objdir/stm32f3_hal_lowlevel.o
+.debug_loc      0x00000000     0x2085
+ .debug_loc     0x00000000      0x6ab objdir/image.o
+ .debug_loc     0x000006ab      0x198 objdir/stm32f3_hal.o
+ .debug_loc     0x00000843     0x1842 objdir/stm32f3_hal_lowlevel.o
 
-.debug_aranges  0x00000000      0x1e0
+.debug_aranges  0x00000000      0x188
  .debug_aranges
                 0x00000000       0x98 objdir/image.o
  .debug_aranges
-                0x00000098       0x58 objdir/../../../src/chiparmour.o
+                0x00000098       0x60 objdir/stm32f3_hal.o
  .debug_aranges
-                0x000000f0       0x60 objdir/stm32f3_hal.o
- .debug_aranges
-                0x00000150       0x90 objdir/stm32f3_hal_lowlevel.o
+                0x000000f8       0x90 objdir/stm32f3_hal_lowlevel.o
 
-.debug_ranges   0x00000000      0x3b0
+.debug_ranges   0x00000000      0x378
  .debug_ranges  0x00000000       0xc8 objdir/image.o
- .debug_ranges  0x000000c8       0x48 objdir/../../../src/chiparmour.o
- .debug_ranges  0x00000110       0xb0 objdir/stm32f3_hal.o
- .debug_ranges  0x000001c0      0x1f0 objdir/stm32f3_hal_lowlevel.o
+ .debug_ranges  0x000000c8       0xb0 objdir/stm32f3_hal.o
+ .debug_ranges  0x00000178      0x200 objdir/stm32f3_hal_lowlevel.o
 
-.debug_line     0x00000000     0x17e1
- .debug_line    0x00000000      0x34e objdir/image.o
- .debug_line    0x0000034e      0x57b objdir/../../../src/chiparmour.o
- .debug_line    0x000008c9      0x434 objdir/stm32f3_hal.o
- .debug_line    0x00000cfd      0xae4 objdir/stm32f3_hal_lowlevel.o
+.debug_line     0x00000000     0x20f4
+ .debug_line    0x00000000      0x49d objdir/image.o
+ .debug_line    0x0000049d      0x4c1 objdir/stm32f3_hal.o
+ .debug_line    0x0000095e     0x1796 objdir/stm32f3_hal_lowlevel.o
 
-.debug_str      0x00000000     0x1ae1
- .debug_str     0x00000000      0x41b objdir/image.o
-                                0x4cf (size before relaxing)
- .debug_str     0x0000041b      0x2ce objdir/../../../src/chiparmour.o
-                                0x4be (size before relaxing)
- .debug_str     0x000006e9      0xb28 objdir/stm32f3_hal.o
-                                0xdb2 (size before relaxing)
- .debug_str     0x00001211      0x8d0 objdir/stm32f3_hal_lowlevel.o
-                               0x15f5 (size before relaxing)
+.debug_str      0x00000000     0x17ed
+ .debug_str     0x00000000      0x419 objdir/image.o
+                                0x4cd (size before relaxing)
+ .debug_str     0x00000419      0xb16 objdir/stm32f3_hal.o
+                                0xd9e (size before relaxing)
+ .debug_str     0x00000f2f      0x8be objdir/stm32f3_hal_lowlevel.o
+                               0x15e1 (size before relaxing)
 
-.comment        0x00000000       0x7f
- .comment       0x00000000       0x7f objdir/image.o
-                                 0x80 (size before relaxing)
- .comment       0x0000007f       0x80 objdir/../../../src/chiparmour.o
- .comment       0x0000007f       0x80 objdir/stm32f3_hal.o
- .comment       0x0000007f       0x80 objdir/stm32f3_hal_lowlevel.o
+.comment        0x00000000       0x76
+ .comment       0x00000000       0x76 objdir/image.o
+                                 0x77 (size before relaxing)
+ .comment       0x00000076       0x77 objdir/stm32f3_hal.o
+ .comment       0x00000076       0x77 objdir/stm32f3_hal_lowlevel.o
 
-.debug_frame    0x00000000      0x674
+.debug_frame    0x00000000      0x504
  .debug_frame   0x00000000      0x1d4 objdir/image.o
- .debug_frame   0x000001d4      0x14c objdir/../../../src/chiparmour.o
- .debug_frame   0x00000320       0xf4 objdir/stm32f3_hal.o
- .debug_frame   0x00000414      0x20c objdir/stm32f3_hal_lowlevel.o
- .debug_frame   0x00000620       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-init.o)
- .debug_frame   0x0000064c       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x000001d4       0xf4 objdir/stm32f3_hal.o
+ .debug_frame   0x000002c8      0x210 objdir/stm32f3_hal_lowlevel.o
+ .debug_frame   0x000004d8       0x2c f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-init.o)
 
 .stab           0x00000000      0x144
  .stab          0x00000000      0x144 objdir/stm32f3_startup.o
 
-.stabstr        0x00000000       0x77
- .stabstr       0x00000000       0x77 objdir/stm32f3_startup.o
+.stabstr        0x00000000       0x65
+ .stabstr       0x00000000       0x65 objdir/stm32f3_startup.o
 
 Cross Reference Table
 
@@ -581,27 +563,26 @@ UART_SetConfig                                    objdir/stm32f3_hal_lowlevel.o
 UART_WaitOnFlagUntilTimeout                       objdir/stm32f3_hal_lowlevel.o
 UartHandle                                        objdir/stm32f3_hal.o
 UsageFault_Handler                                objdir/stm32f3_startup.o
-_Jv_RegisterClasses                               c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
-__bss_end__                                       c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/crt0.o
-__bss_start__                                     c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/crt0.o
-__call_exitprocs                                  c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-exit.o)
-__deregister_frame_info                           c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
-__dso_handle                                      c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
-__errno                                           c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-errno.o)
+__bss_end__                                       f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
+__bss_start__                                     f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
+__call_exitprocs                                  f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-exit.o)
+__deregister_frame_info                           f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crtbegin.o
+__dso_handle                                      f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crtbegin.o
+__errno                                           f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-errno.o)
                                                   objdir/stm32f3_sysmem.o
-__init_array_end                                  c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-init.o)
-__init_array_start                                c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-init.o)
-__libc_fini_array                                 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/crt0.o
-__libc_init_array                                 c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-init.o)
+__init_array_end                                  f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-init.o)
+__init_array_start                                f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-init.o)
+__libc_fini_array                                 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
+__libc_init_array                                 f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-init.o)
                                                   objdir/stm32f3_startup.o
-                                                  c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/crt0.o
-__preinit_array_end                               c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-init.o)
-__preinit_array_start                             c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-init.o)
-__register_frame_info                             c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crtbegin.o
-__sf_fake_stderr                                  c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-impure.o)
-__sf_fake_stdin                                   c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-impure.o)
-__sf_fake_stdout                                  c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-impure.o)
-__stack                                           c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/crt0.o
+                                                  f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
+__preinit_array_end                               f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-init.o)
+__preinit_array_start                             f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-init.o)
+__register_frame_info                             f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crtbegin.o
+__sf_fake_stderr                                  f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-impure.o)
+__sf_fake_stdin                                   f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-impure.o)
+__sf_fake_stdout                                  f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-impure.o)
+__stack                                           f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
 _ca_compare_u32_eq                                objdir/../../../src/chiparmour.o
                                                   objdir/image.o
 _ca_limit_u32                                     objdir/../../../src/chiparmour.o
@@ -611,21 +592,21 @@ _ca_ret_u32                                       objdir/../../../src/chiparmour
 _ebss                                             objdir/stm32f3_startup.o
 _edata                                            objdir/stm32f3_startup.o
 _estack                                           objdir/stm32f3_startup.o
-_exit                                             c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-exit.o)
-_fini                                             c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crti.o
-_global_impure_ptr                                c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-impure.o)
-                                                  c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-exit.o)
-_impure_ptr                                       c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-impure.o)
-                                                  c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-errno.o)
-_init                                             c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/crti.o
-                                                  c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-init.o)
-_mainCRTStartup                                   c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/crt0.o
+_exit                                             f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-exit.o)
+_fini                                             f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crti.o
+_global_impure_ptr                                f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-impure.o)
+                                                  f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-exit.o)
+_impure_ptr                                       f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-impure.o)
+                                                  f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-errno.o)
+_init                                             f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m/nofp/crti.o
+                                                  f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-init.o)
+_mainCRTStartup                                   f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
 _sbrk                                             objdir/stm32f3_sysmem.o
 _sbss                                             objdir/stm32f3_startup.o
 _sdata                                            objdir/stm32f3_startup.o
 _sidata                                           objdir/stm32f3_startup.o
-_start                                            c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/crt0.o
-atexit                                            c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/crt0.o
+_start                                            f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
+atexit                                            f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
 boot_new_image                                    objdir/image.o
 boot_new_image_armoured                           objdir/image.o
 ca_atmine                                         objdir/../../../src/chiparmour.o
@@ -644,26 +625,26 @@ change_ok_led                                     objdir/stm32f3_hal.o
 checkfwupdate_armoured                            objdir/image.o
 checkfwupdate_original                            objdir/image.o
 end                                               objdir/stm32f3_sysmem.o
-exit                                              c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-exit.o)
-                                                  c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/crt0.o
+exit                                              f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-exit.o)
+                                                  f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
 fw_update_stage1                                  objdir/image.o
 fw_update_stage1_failed                           objdir/image.o
 fw_update_stage2_failed                           objdir/image.o
 g_pfnVectors                                      objdir/stm32f3_startup.o
 getch                                             objdir/stm32f3_hal.o
 hal_sys_tick                                      objdir/stm32f3_hal_lowlevel.o
-hardware_init_hook                                c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/crt0.o
+hardware_init_hook                                f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
 image                                             objdir/image.o
 init_uart                                         objdir/stm32f3_hal.o
                                                   objdir/image.o
 main                                              objdir/image.o
                                                   objdir/stm32f3_startup.o
-                                                  c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/crt0.o
+                                                  f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
 manf_public_key                                   objdir/image.o
-memcpy                                            c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-memcpy-stub.o)
+memcpy                                            f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-memcpy-stub.o)
                                                   objdir/../../../src/chiparmour.o
-memset                                            c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libg_nano.a(lib_a-memset.o)
-                                                  c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/crt0.o
+memset                                            f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a(lib_a-memset.o)
+                                                  f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
 platform_init                                     objdir/stm32f3_hal.o
                                                   objdir/image.o
 putch                                             objdir/stm32f3_hal.o
@@ -672,7 +653,7 @@ puts                                              objdir/image.o
                                                   objdir/../../../src/chiparmour.o
 rtos_init                                         objdir/image.o
 rtos_loop                                         objdir/image.o
-software_init_hook                                c:/program files (x86)/gnu tools arm embedded/6 2017-q1-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/crt0.o
+software_init_hook                                f:/programs/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
 some_crypto_function                              objdir/image.o
 some_hash_function                                objdir/image.o
 trigger_high                                      objdir/stm32f3_hal.o
