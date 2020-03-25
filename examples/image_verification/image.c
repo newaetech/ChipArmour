@@ -292,8 +292,10 @@ void fw_update_stage1(void * image)
 void fw_update_stage1_failed(void * image)
 {
     //Prevent out of order function calls
+    //Needs to be done twice to match the other branch
     ca_state_machine(1);
-    
+    ca_state_machine(2);
+
     //Flag not set - boot as normal
     bootloader_flag = 0;
 }

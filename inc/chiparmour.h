@@ -273,9 +273,11 @@ static inline uint32_t ca_limit_u32(uint32_t input, uint32_t min, uint32_t max)
     equal_function: Function of type 'void func(void *)' that will be called
                     with argument equal_func_param if op1 == op2. Null if you
                     don't need a function called on match.
+    equal_func_param: void * passed to equal_function()
     unequal_function: Function of type 'void func(void *)' that will be called
                     with argument unequal_func_param if op1 != op2. Null if you
                     don't need a function called on differ.
+    unequal_func_param: void * passed to unequal_param()
 */
 
 static inline ca_return_t ca_compare_u32_eq( uint32_t op1, 
@@ -298,9 +300,22 @@ static inline ca_return_t ca_compare_u32_eq( uint32_t op1,
  **************************************************************************/
 
 /**
-   Signature verification: compares the result of a function call with some
-   magic value, and calls one of two functions in response.
+    Signature verification: compares the result of a function call with some
+    magic value, and calls one of two functions in response.
 
+    get_value_func: function of the type 'void func(void *, uint8_t *array)
+                    that will be called and compared to expected_value_array.
+                    The result from func() that will be compared is array.
+    get_value_func_param: void * passed to get_value_func
+    get_value_func_return: Memory from get_value_func
+    expected_value_array: Value to be compared with the return of get_value_func()
+    expected_value_len: Length of expected_value_array
+    equal_function: Called if the result of get_value_func() and expected_value_array are the same.
+                    Of type 'void func(void *)
+    equal_func_param: void * passed to equal_function()
+    unequal_function: Called if the result of get_value_func() and expected_value_array are unequal.
+                    Of type 'void func(void *)
+    unequal_func_param: void * passed to unequal_function()
 */
 ca_return_t ca_compare_func_eq( ca_fptr_voidptr_array_t    get_value_func,
                              void *                     get_value_func_param,
